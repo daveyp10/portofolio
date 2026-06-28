@@ -35,7 +35,6 @@
             padding: 72px 36px 96px;
         }
 
-        /* HEADER */
         header { margin-bottom: 64px; }
 
         .kicker {
@@ -80,7 +79,6 @@
             line-height: 1.8;
         }
 
-        /* SECTION HEADER */
         .section-header {
             display: flex;
             align-items: center;
@@ -102,7 +100,6 @@
             background: var(--border);
         }
 
-        /* CARD */
         .card {
             background: var(--card);
             border: 1px solid var(--border);
@@ -116,7 +113,6 @@
             box-shadow: 0 4px 20px rgba(2, 132, 199, 0.06);
         }
 
-        /* card top */
         .card-top {
             padding: 24px 26px 20px;
             border-bottom: 1px solid var(--border);
@@ -175,7 +171,6 @@
             border: 1px solid #BAE6FD;
         }
 
-        /* card body */
         .card-body { padding: 22px 26px 24px; }
 
         .row {
@@ -228,7 +223,6 @@
             font-weight: 500;
         }
 
-        /* photo strip */
         .photo-strip {
             display: flex;
             gap: 10px;
@@ -239,8 +233,7 @@
 
         .photo-slot {
             flex: 1;
-            aspect-ratio: 9/16;
-            max-height: 180px;
+            aspect-ratio: 4/5;
             border-radius: 8px;
             border: 1.5px dashed var(--border-md);
             background: var(--bg);
@@ -250,6 +243,7 @@
             justify-content: center;
             gap: 7px;
             color: var(--text-3);
+            overflow: hidden;
         }
         .photo-slot span {
             font-family: 'Space Mono', monospace;
@@ -264,7 +258,6 @@
             border-radius: 8px;
         }
 
-        /* stack */
         .stack-row {
             display: grid;
             grid-template-columns: 80px 1fr;
@@ -290,7 +283,6 @@
             letter-spacing: 0.2px;
         }
 
-        /* FOOTER */
         footer {
             margin-top: 64px;
             padding-top: 22px;
@@ -364,16 +356,13 @@
             </div>
             <div class="photo-strip">
                 <div class="photo-slot">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-                    <span>Sample post</span>
+                    <img src="car1.png" alt="Sample post 1">
                 </div>
                 <div class="photo-slot">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-                    <span>Sample post</span>
+                    <img src="car2.png" alt="Sample post 2">
                 </div>
                 <div class="photo-slot">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-                    <span>Sample post</span>
+                    <img src="car3.png" alt="Sample post 3">
                 </div>
             </div>
             <div class="stack-row">
