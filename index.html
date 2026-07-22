@@ -259,6 +259,29 @@
             border-radius: 8px;
         }
 
+        .video-slot {
+            position: relative;
+            aspect-ratio: 9/16;
+        }
+
+        .mute-btn {
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(15, 23, 42, 0.6);
+            color: #fff;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 2;
+        }
+
         .stack-row {
             display: grid;
             grid-template-columns: 80px 1fr;
@@ -408,14 +431,13 @@
                 </div>
             </div>
             <div class="photo-strip">
-                <div class="photo-slot">
-                    <video src="vid1.mp4" autoplay muted loop playsinline></video>
+                <div class="photo-slot video-slot">
+                    <video src="sample1.mp4" autoplay muted loop playsinline></video>
+                    <button class="mute-btn" aria-label="Toggle sound">🔇</button>
                 </div>
-                <div class="photo-slot">
-                    <video src="vid2.mp4" autoplay muted loop playsinline></video>
-                </div>
-                <div class="photo-slot">
-                    <video src="vid3.mp4" autoplay muted loop playsinline></video>
+                <div class="photo-slot video-slot">
+                    <video src="sample2.mp4" autoplay muted loop playsinline></video>
+                    <button class="mute-btn" aria-label="Toggle sound">🔇</button>
                 </div>
             </div>
             <div class="stack-row">
@@ -487,5 +509,14 @@
     </footer>
 
 </div>
+<script>
+    document.querySelectorAll('.mute-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var video = btn.previousElementSibling;
+            video.muted = !video.muted;
+            btn.textContent = video.muted ? '🔇' : '🔊';
+        });
+    });
+</script>
 </body>
 </html>
