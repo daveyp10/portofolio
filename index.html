@@ -424,9 +424,10 @@
                 <div class="row-content">
                     <ul>
                         <li><strong>Scripting</strong> — DeepSeek API generates psychology/deep-talk scripts formatted for voiceover and caption burn-in.</li>
-                        <li><strong>Visuals</strong> — Google Veo (via Gemini API) generates cinematic background video matched to the script's mood and pacing.</li>
-                        <li><strong>Voice</strong> — ElevenLabs API renders emotionally nuanced voiceovers; preferred over OpenAI TTS for expressive quality on this content style.</li>
-                        <li><strong>Assembly</strong> — FFmpeg compiles all layers and burns frame-accurate subtitles synced to the millisecond.</li>
+                        <li><strong>Visuals</strong> — FLUX.1 Schnell (via Together AI) generates background imagery at a fraction of the cost of video-native models, combined with a reusable licensed b-roll library to cut generation volume further.</li>
+                        <li><strong>Voice</strong> — Kokoro TTS, self-hosted, renders voiceovers with no per-call API fees.</li>
+                        <li><strong>Captions</strong> — Faster-Whisper transcribes the voiceover locally to drive frame-accurate subtitle timing.</li>
+                        <li><strong>Assembly & distribution</strong> — Python, Pillow, and FFmpeg compile all layers and burn subtitles; Vista Social API handles multi-platform scheduling.</li>
                     </ul>
                 </div>
             </div>
@@ -443,11 +444,14 @@
             <div class="stack-row">
                 <div class="row-label" style="padding-top:6px;">Stack</div>
                 <div class="tags">
-                    <span class="tag">Python</span>
                     <span class="tag">DeepSeek API</span>
-                    <span class="tag">Google Veo / Gemini API</span>
-                    <span class="tag">ElevenLabs API</span>
+                    <span class="tag">FLUX.1 Schnell via Together AI</span>
+                    <span class="tag">Python + Pillow + FFmpeg</span>
+                    <span class="tag">Kokoro TTS (self-hosted)</span>
+                    <span class="tag">Reusable licensed library</span>
+                    <span class="tag">Faster-Whisper</span>
                     <span class="tag">FFmpeg</span>
+                    <span class="tag">Vista Social API</span>
                 </div>
             </div>
         </div>
